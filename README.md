@@ -1,22 +1,23 @@
 Vimium - The Hacker's Browser
 =============================
 
-[![Build Status](https://secure.travis-ci.org/philc/vimium.png?branch=master)](https://travis-ci.org/philc/vimium)
+*DISCLAIMER:* I do not own this extension, but decided to port to my current browser which happens to be Opera.
+It is completely *an experiment*  with not working Vomnibar (hope I will find the way to fix it).
 
-Vimium is a Chrome extension that provides keyboard-based navigation and control in the spirit of the Vim
+Vimium is a Opera extension that provides keyboard-based navigation and control in the spirit of the Vim
 editor.
 
 __Installation instructions:__
 
 You can install the stable version of Vimium from the
-[Chrome Extensions Gallery](https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb).
+[Opera Extensions Gallery (TBD)](https://addons.opera.com/en/extensions/).
 
 Please see
-[CONTRIBUTING.md](https://github.com/philc/vimium/blob/master/CONTRIBUTING.md#installing-from-source)
+[CONTRIBUTING.md](https://github.com/noomorph/vimium/blob/master/CONTRIBUTING.md#installing-from-source)
 for instructions on how you can install Vimium from source.
 
 The Options page can be reached via a link on the help dialog (hit `?`) or via the button next to Vimium on
-the Chrome Extensions page (`chrome://extensions`).
+the Opera Extensions page (`opera://extensions`).
 
 Keyboard Bindings
 -----------------

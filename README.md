@@ -2,7 +2,7 @@ VIMtage for Opera
 =============================
 
 **VIMtage for Opera** is an extension that provides keyboard-based navigation and control in the spirit of the Vim
-editor.
+editor. It is based on [Vimium extension for Chrome](https://github.com/philc/vimium).
 
 **NOTE:** bookmark support is currently disabled due to current Opera API limitations.
 

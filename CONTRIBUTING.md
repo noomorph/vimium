@@ -1,4 +1,4 @@
-# Contributing to Vimium
+# Contributing to VIMtage for Opera
 
 You'd like to fix a bug or implement a feature? Great! Check out the bugs on our issues tracker, or implement
 one of the suggestions there that have been tagged 'todo'. If you have a suggestion of your own, start a
@@ -11,19 +11,19 @@ work on, add a comment to the respective issue so others don't duplicate your ef
 Please include the following when reporting an issue:
 
  1. Chrome and OS Version: `chrome://version`
- 1. Vimium Version: `chrome://extensions`
+ 1. VIMtage for Opera Version: `chrome://extensions`
 
 ## Installing From Source
 
-Vimium is written in Coffeescript, which compiles to Javascript. To
-install Vimium from source:
+VIMtage for Opera is written in Coffeescript, which compiles to Javascript. To
+install VIMtage for Opera from source:
 
  1. Install [Coffeescript](http://coffeescript.org/#installation).
  1. Run `cake build` from within your vimium directory. Any coffeescript files you change will now be automatically compiled to Javascript.
  1. Navigate to `chrome://extensions`
  1. Toggle into Developer Mode
  1. Click on "Load Unpacked Extension..."
- 1. Select the Vimium directory.
+ 1. Select the VIMtage for Opera directory.
 
 ## Tests
 

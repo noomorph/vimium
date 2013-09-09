@@ -1,22 +1,21 @@
-Vimium - The Hacker's Browser
+VIMtage for Opera
 =============================
 
-*DISCLAIMER:* I do not own this extension, but decided to port to my current browser which happens to be Opera.
-It is completely *an experiment*  with not working Vomnibar (hope I will find the way to fix it).
-
-Vimium is a Opera extension that provides keyboard-based navigation and control in the spirit of the Vim
+**VIMtage for Opera** is an extension that provides keyboard-based navigation and control in the spirit of the Vim
 editor.
+
+**NOTE:** bookmark support is currently disabled due to current Opera API limitations.
 
 __Installation instructions:__
 
-You can install the stable version of Vimium from the
+You can install the stable version of **VIMtage for Opera** from the
 [Opera Extensions Gallery (TBD)](https://addons.opera.com/en/extensions/).
 
 Please see
-[CONTRIBUTING.md](https://github.com/noomorph/vimium/blob/master/CONTRIBUTING.md#installing-from-source)
-for instructions on how you can install Vimium from source.
+[CONTRIBUTING.md](https://github.com/noomorph/vimtage-opera/blob/master/CONTRIBUTING.md#installing-from-source)
+for instructions on how you can install **VIMtage for Opera** from source.
 
-The Options page can be reached via a link on the help dialog (hit `?`) or via the button next to Vimium on
+The Options page can be reached via a link on the help dialog (hit `?`) or via the button next to **VIMtage for Opera** on
 the Opera Extensions page (`opera://extensions`).
 
 Keyboard Bindings
@@ -44,13 +43,6 @@ Navigating the current page:
     yy      copy the current url to the clipboard
     yf      copy a link url to the clipboard
     gf      cycle forward to the next frame
-
-Navigating to new pages:
-
-    o       Open URL, bookmark, or history entry
-    O       Open URL, bookmark, history entry in a new tab
-    b       Open bookmark
-    B       Open bookmark in a new tab
 
 Using find:
 
@@ -87,7 +79,7 @@ Additional advanced browsing commands:
     zH      scroll all the way left
     zL      scroll all the way right
 
-Vimium supports command repetition so, for example, hitting '5t' will open 5 tabs in rapid succession. `<ESC>` (or
+**VIMtage** supports command repetition so, for example, hitting '5t' will open 5 tabs in rapid succession. `<ESC>` (or
 `<c-[>`) will clear any partial commands in the queue and will also exit insert and find modes.
 
 
@@ -99,20 +91,20 @@ on the options page.
 
 Enter one of the following key mapping commands per line:
 
-- `map key command`: Maps a key to a Vimium command. Overrides Chrome's default behavior (if any).
-- `unmap key`: Unmaps a key and restores Chrome's default behavior (if any).
-- `unmapAll`: Unmaps all bindings. This is useful if you want to completely wipe Vimium's defaults and start
+- `map key command`: Maps a key to a **VIMtage** command. Overrides Opera's default behavior (if any).
+- `unmap key`: Unmaps a key and restores Opera's default behavior (if any).
+- `unmapAll`: Unmaps all bindings. This is useful if you want to completely wipe VIMtage's defaults and start
   from scratch with your own setup.
 
 Examples:
 
-- `map <c-d> scrollPageDown` maps ctrl+d to scrolling the page down. Chrome's default behavior of bringing up
+- `map <c-d> scrollPageDown` maps ctrl+d to scrolling the page down. Opera's default behavior of bringing up
   a bookmark dialog is suppressed.
 - `map r reload` maps the r key to reloading the page.
-- `unmap <c-d>` removes any mapping for ctrl+d and restores Chrome's default behavior.
+- `unmap <c-d>` removes any mapping for ctrl+d and restores Opera's default behavior.
 - `unmap r` removes any mapping for the r key.
 
-Available Vimium commands can be found via the "Show Available Commands" link near the key mapping box. The
+Available VIMtage commands can be found via the "Show Available Commands" link near the key mapping box. The
 command name appears to the right of the description in parenthesis.
 
 You can add comments to your key mappings by starting a line with `"` or `#`.
@@ -141,7 +133,6 @@ Release Notes
 - Added marks for saving and jumping to sections of a page. mX to set a mark and `X to return to it.
 - Added "LinkHints.activateModeToOpenIncognito", currently an advanced, unbound command.
 - Disallowed repeat tab closings, since this causes trouble for many people.
-- Update our Chrome APIs so Vimium works on Chrome 28+.
 - Bugfixes.
 
 1.42 (11/03/2012)
@@ -164,32 +155,14 @@ Release Notes
 
 1.38 (09/08/2012)
 
-- `O` now opens Vomnibar results in a new tab. `B` does the same for bookmarks only.
-- Add a browser icon to quickly add sites to Vimium's exclude list.
+- Add a browser icon to quickly add sites to VIMtage's exclude list.
 - Restyle options page.
 - `gi` now launches a new mode that allows the user to tab through the input elements on the page.
 - Bugfixes.
 
-1.37 (07/07/2012)
-
-- Select the first result by default in Vomnibar tab and bookmark modes.
-
-1.36 (07/07/2012)
-
-- 'b' brings up a bookmark-only Vomnibar.
-- Better support for some bookmarklets.
-
 1.35 (07/05/2012)
 
 - Bugfixes.
-
-1.34 (07/03/2012)
-
-- A bugfix for bookmarklets in Vomnibar.
-
-1.33 (07/02/2012)
-
-- A Vomnibar, which allows you to open sites from history, bookmarks, and tabs using Vimium's UI. Type "o" to try it.
 
 1.32 (03/05/2012)
 
@@ -210,8 +183,7 @@ Release Notes
 
 - Support for image maps in link hints.
 - Counts now work with forward & backward navigation.
-- Tab & shift-tab to navigate bookmarks dialog.
-- An alternate link hints mode: type the title of a link to select it. You can enable it in Vimium's Advanced Preferences.
+- An alternate link hints mode: type the title of a link to select it. You can enable it in VIMtage's Advanced Preferences.
 - Bug fixes.
 
 1.29 (07/30/2011)
@@ -219,11 +191,10 @@ Release Notes
 - `yf` to copy a link hint url to the clipboard.
 - Scatter link hints to prevent clustering on dense sites.
 - Don't show insert mode notification unless you specifically hit `i`.
-- Remove zooming functionality now that Chrome does it all natively.
+- Remove zooming functionality now that Opera does it all natively.
 
 1.28 (06/29/2011)
 
-- Support for opening bookmarks (`b` and `B`).
 - Support for contenteditable text boxes.
 - Speed improvements and bugfixes.
 
@@ -263,12 +234,12 @@ Release Notes
 
 1.19 (06/29/2010)
 
--  A critical bug fix for development channel Chromium.
--  Vimium icons for the Chrome extensions panel and other places.
+-  A critical bug fix for development channel Opera.
+-  VIMtage icons for the Opera extensions panel and other places.
 
 1.18 (06/22/2010)
 
--  Vimium now runs on pages with file:/// and ftp:///
+-  VIMtage now runs on pages with file:/// and ftp:///
 -  The Options page is now linked from the Help dialog.
 -  Arrow keys and function keys can now be mapped using &lt;left&gt;, &lt;right&gt;, &lt;up&gt;, &lt;down&gt;,
    &lt;f1&gt;, &lt;f2&gt;, etc. in the mappings interface.
@@ -294,7 +265,7 @@ does not support command repetition.
 1.15 (01/31/2010)
 
 -  Make the CSS used by the link hints configurable. It's under Advanced Options.
--  Add a notification linking to the changelog when Vimium is updated in the background.
+-  Add a notification linking to the changelog when VIMtage is updated in the background.
 -  Link-hinting performance improvements and bugfixes.
 -  Ctrl+D and Ctrl+U now scroll by 1/2 page instead of a fixed amount, to mirror Vim's behavior.
 
@@ -323,9 +294,9 @@ does not support command repetition.
 1.1 (01/03/2010)
 
 -  A nicer looking settings page.
--  An exclusion list that allows you to define URL patterns for which Vimium will be disabled (e.g.
+-  An exclusion list that allows you to define URL patterns for which **VIMtage** will be disabled (e.g.
    http\*://mail.google.com/\*).
--  Vimium-interpreted keystrokes are no longer sent to the page.
+-  **VIMtage**-interpreted keystrokes are no longer sent to the page.
 -  Better Windows support.
 -  Various miscellaneous bug fixes and UI improvements.
 
